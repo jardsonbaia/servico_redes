@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Minha Nutricionista</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="sidepanel widget_sized product-data login-page">
+	<table cellspacing="1" cellpadding="0" border="0" id="shell" class="page">
+	<tr height="50">
+		<td colspan="2" bgcolor="white"> 
+		<H2>Os alimentos estão organizados em grupos alimentares e são apresentados por porção de 100 gramas e medidas caseiras. O programa permite a busca de saber quais vitaminas foram consumidas durante seu dia.</H2>	
+		<h1>O que você comeu hoje? </h1>
+		<form action="cgi-bin/script.py" method="post">
+		<ul>
+			<h4>Açucarados </h4>
+			<li>
+				<input type="checkbox" id="chocolate" name="chocolate" class="item_filter size" value="chocolate">
+				<a>
+					<label for="chocolate">
+						<img src="imagens/acucarados/chocolate.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cocada" name="cocada"class="item_filter size" value="cocada">
+				<a>
+					<label for="cocada">
+						<img src="imagens/acucarados/cocada.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="doce_leite" name="doce_leite" class="item_filter size" value="doce_leite">
+				<a>
+					<label for="doce_leite">
+						<img src="imagens/acucarados/doce_leite.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="geleia" name="geleia" class="item_filter size" value="geleia">
+				<a>
+					<label for="geleia">
+						<img src="imagens/acucarados/geleia.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="mel" name="mel" class="item_filter size" value="mel">
+				<a>
+					<label for="mel">
+						<img src="imagens/acucarados/mel.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pudim" name="pudim" class="item_filter size" value="pudim">
+				<a>
+					<label for="pudim">
+						<img src="imagens/acucarados/pudim.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Bebidas:</h4>
+			<li>
+				<input type="checkbox" id="achocolatado" name="achocolatado" class="item_filter size" value="achocolatado">
+				<a>
+					<label for="achocolatado">
+						<img src="imagens/bebidas/achocolatado.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="agua_coco" name="agua_coco" class="item_filter size" value="agua_coco">
+				<a>
+					<label for="agua_coco">
+						<img src="imagens/bebidas/agua_coco.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cafe" name="cafe" class="item_filter size" value="cafe">
+				<a>
+					<label for="cafe">
+						<img src="imagens/bebidas/cafe.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cafe_leite" name="Cafe com Leite" class="item_filter size" value="Café com Leite">
+				<a>
+					<label for="cafe_leite">
+						<img src="imagens/bebidas/cafe_leite.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cana" name="cana" class="item_filter size" value="cana">
+				<a>
+					<label for="cana">
+						<img src="imagens/bebidas/cana.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cerveja" name="cerveja" class="item_filter size" value="cerveja">
+				<a>
+					<label for="cerveja">
+						<img src="imagens/bebidas/cerveja.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cha" name="cha" class="item_filter size" value="cha">
+				<a>
+					<label for="cha">
+						<img src="imagens/bebidas/cha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="refrigerante" name="Refrigerante" class="item_filter size" value="Refrigerante">
+				<a>
+					<label for="refrigerante">
+						<img src="imagens/bebidas/refrigerante.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Carnes</h4>
+			<li>
+				<input type="checkbox" id="bacon" name="bacon" class="item_filter size" value="bacon">
+				<a>
+					<label for="bacon">
+						<img src="imagens/carnes/bacon.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="boi" name="boi" class="item_filter size" value="boi">
+				<a>
+					<label for="boi">
+						<img src="imagens/carnes/boi.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="figado" name="figado" class="item_filter size" value="figado">
+				<a>
+					<label for="figado">
+						<img src="imagens/carnes/figado.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="frango" name="frango" class="item_filter size" value="frango">
+				<a>
+					<label for="frango">
+						<img src="imagens/carnes/frango.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="linguica" name="linguica" class="item_filter size" value="linguica">
+				<a>
+					<label for="linguica">
+						<img src="imagens/carnes/linguica.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="ovo" name="ovo" class="item_filter size" value="ovo">
+				<a>
+					<label for="ovo">
+						<img src="imagens/carnes/ovo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pato" name="pato" class="item_filter size" value="pato">
+				<a>
+					<label for="pato">
+						<img src="imagens/carnes/pato_tucupi.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="peru" name="peru" class="item_filter size" value="peru">
+				<a>
+					<label for="peru">
+						<img src="imagens/carnes/peru.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="porco" name="porco" class="item_filter size" value="porco">
+				<a>
+					<label for="porco">
+						<img src="imagens/carnes/porco.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Cereais e derivados</h4>
+			<li>
+				<input type="checkbox" id="arroz" name="arroz" class="item_filter size" value="arroz">
+				<a>
+					<label for="arroz">
+						<img src="imagens/cereais/arroz.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="arroz_integral" name="arroz_integral" class="item_filter size" value="arroz_integral">
+				<a>
+					<label for="arroz_integral">
+						<img src="imagens/cereais/arroz_integral.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="aveia" name="aveia" class="item_filter size" value="aveia">
+				<a>
+					<label for="aveia">
+						<img src="imagens/cereais/aveia.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="baiao" name="baiao" class="item_filter size" value="baiao">
+				<a>
+					<label for="baiao">
+						<img src="imagens/cereais/baiao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="biscoito" name="biscoito" class="item_filter size" value="biscoito">
+				<a>
+					<label for="biscoito">
+						<img src="imagens/cereais/biscoito_recheado.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="canjica" name="canjica" class="item_filter size" value="canjica">
+				<a>
+					<label for="canjica">
+						<img src="imagens/cereais/canjica.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cuscuz" name="cuscuz" class="item_filter size" value="cuscuz">
+				<a>
+					<label for="cuscuz">
+						<img src="imagens/cereais/cuscuz.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="farofa" name="Farofa" class="item_filter size" value="Farofa">
+				<a>
+					<label for="farofa">
+						<img src="imagens/cereais/farofa.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="milho" name="milho" class="item_filter size" value="milho">
+				<a>
+					<label for="milho">
+						<img src="imagens/cereais/milho.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pamonha" name="Pamonha" class="item_filter size" value="Pamonha">
+				<a>
+					<label for="pamonha">
+						<img src="imagens/cereais/pamonha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pao_integral" name="pao_integral" class="item_filter size" value="pao_integral">
+				<a>
+					<label for="pao_integral">
+						<img src="imagens/cereais/pao_integral.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="polenta" name="polenta" class="item_filter size" value="polenta">
+				<a>
+					<label for="polenta">
+						<img src="imagens/cereais/polenta.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Frutas </h4>
+			<li>
+				<input type="checkbox" id="abacate" name="abacate" class="item_filter size" value="abacate">
+				<a>
+					<label for="abacate">
+						<img src="imagens/frutas/abacate.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="abacaxi" name="abacaxi" class="item_filter size" value="abacaxi">
+				<a>
+					<label for="abacaxi">
+						<img src="imagens/frutas/abacaxi.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="abiu" name="abiu" class="item_filter size" value="abiu">
+				<a>
+					<label for="abiu">
+						<img src="imagens/frutas/abiu.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="acai" name="acai" class="item_filter size" value="acai">
+				<a>
+					<label for="acai">
+						<img src="imagens/frutas/acai.jpg" width="100" align="40" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="acerola" name="acerola" class="item_filter size" value="acerola">
+				<a>
+					<label for="acerola">
+						<img src="imagens/frutas/acerola.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="ameixa" name="ameixa" class="item_filter size" value="ameixa">
+				<a>
+					<label for="ameixa">
+						<img src="imagens/frutas/ameixa.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="ata" name="ata" class="item_filter size" value="ata">
+				<a>
+					<label for="ata">
+						<img src="imagens/frutas/ata.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="banana" name="banana" class="item_filter size" value="banana">
+				<a>
+					<label for="banana">
+						<img src="imagens/frutas/banana.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="caja" name="caja" class="item_filter size" value="caja">
+				<a>
+					<label for="caja">
+					<img src="imagens/frutas/caja.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="caju" name="caju" class="item_filter size" value="caju">
+				<a>
+					<label for="caju">
+						<img src="imagens/frutas/caju.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="caqui" name="caqui" class="item_filter size" value="caqui">
+				<a>
+					<label for="caqui">
+						<img src="imagens/frutas/caqui.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="carambola" name="carambola" class="item_filter size" value="carambola">
+				<a>
+					<label for="carambola">
+						<img src="imagens/frutas/carambola.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cereja" name="cereja" class="item_filter size" value="cereja">
+				<a>
+					<label for="cereja">
+						<img src="imagens/frutas/cereja.jpg" width="100" alt="" />	
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cupuacu" name="cupuacu" class="item_filter size" value="cupuacu">
+				<a>
+					<label for="cupuacu">
+						<img src="imagens/frutas/cupuacu.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="figo" name="figo" class="item_filter size" value="figo">
+				<a>
+					<label for="figo">
+						<img src="imagens/frutas/figo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="goiaba" name="goiaba" class="item_filter size" value="goiaba">
+				<a>
+					<label for="goiaba">
+						<img src="imagens/frutas/goiaba.jpg" width="100" alt="" />	
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="graviola" name="graviola" class="item_filter size" value="graviola">
+				<a>
+					<label for="graviola">
+						<img src="imagens/frutas/graviola.jpg" width="100" alt="" />	
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="jabuticaba" name="jabuticaba" class="item_filter size" value="jabuticaba">
+				<a>
+					<label for="jabuticaba">
+						<img src="imagens/frutas/jabuticaba.jpg" width="100" alt="" />	
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="jaca" name="jaca" class="item_filter size" value="jaca">
+				<a>
+					<label for="jaca">
+						<img src="imagens/frutas/jaca.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="jambo" name="jambo" class="item_filter size" value="jambo">
+				<a>
+					<label for="jambo">
+						<img src="imagens/frutas/jambo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="kiwi" name="kiwi" class="item_filter size" value="kiwi">
+				<a>
+					<label for="kiwi">
+						<img src="imagens/frutas/kiwi.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="laranja" name="laranja" class="item_filter size" value="laranja">
+				<a>
+					<label for="laranja">
+						<img src="imagens/frutas/laranja.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="limao" name="limao" class="item_filter size" value="limao">
+				<a>
+					<label for="limao">
+						<img src="imagens/frutas/limao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="maça" name="maca" class="item_filter size" value="maça">
+				<a>
+					<label for="maça">
+						<img src="imagens/frutas/maca.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="macauba" name="macauba" class="item_filter size" value="macauba">
+				<a>
+					<label for="macauba">
+						<img src="imagens/frutas/macauba.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="mamao" name="mamao" class="item_filter size" value="mamao">
+				<a>
+					<label for="mamao">
+						<img src="imagens/frutas/mamao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="manga" name="manga" class="item_filter size" value="manga">
+				<a>
+					<label for="manga">
+					<img src="imagens/frutas/manga.jpg" width="100" alt="" />
+				</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="maracuja" name="maracuja" class="item_filter size" value="maracuja">
+				<a>
+					<label for="maracuja">
+						<img src="imagens/frutas/maracuja.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="melancia" name="melancia" class="item_filter size" value="melancia">
+				<a>
+					<label for="melancia">
+						<img src="imagens/frutas/melancia.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="melao" name="melao" class="item_filter size" value="melao">
+				<a>
+					<label for="melao">
+						<img src="imagens/frutas/melao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="morango" name="morango" class="item_filter size" value="morango">
+				<a>
+					<label for="morango">
+						<img src="imagens/frutas/morango.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="nespera" name="nespera" class="item_filter size" value="nespera">
+				<a>
+					<label for="nespera">
+						<img src="imagens/frutas/nespera.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pequi" name="pequi" class="item_filter size" value="pequi">
+				<a>
+					<label for="pequi">
+						<img src="imagens/frutas/pequi.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pera" name="pera" class="item_filter size" value="pera">
+				<a>
+					<label for="pera">
+						<img src="imagens/frutas/pera.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pessego" name="pessego" class="item_filter size" value="pessego">
+				<a>
+					<label for="pessego">
+						<img src="imagens/frutas/pessego.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pinha" name="pinha" class="item_filter size" value="pinha">
+				<a>
+					<label for="pinha">
+						<img src="imagens/frutas/pinha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pitanga" name="pitanga" class="item_filter size" value="pitanga">
+				<a>
+					<label for="pitanga">
+						<img src="imagens/frutas/pitanga.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pitomba" name="pitomba" class="item_filter size" value="pitomba">
+				<a>
+					<label for="pitomba">
+						<img src="imagens/frutas/pitomba.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="roma" name="roma" class="item_filter size" value="roma">
+				<a>
+					<label for="roma">
+						<img src="imagens/frutas/roma.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="seriguela" name="seriguela" class="item_filter size" value="seriguela">
+				<a>
+					<label for="seriguela">
+						<img src="imagens/frutas/seriguela.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="tamarindo" name="tamarindo" class="item_filter size" value="tamarindo">
+				<a>
+					<label for="tamarindo">
+						<img src="imagens/frutas/tamarindo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="tangerina" name="tangerina" class="item_filter size" value="tangerina">
+				<a>
+					<label for="tangerina">
+						<img src="imagens/frutas/tangerina.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="umbu" name="umbu" class="item_filter size" value="umbu">
+				<a>
+					<label for="umbu">
+						<img src="imagens/frutas/umbu.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="uva" name="uva" class="item_filter size" value="uva">
+				<a>
+					<label for="uva">
+						<img src="imagens/frutas/uva.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Verduras, hortaliças e derivados</h4>
+			<li>
+				<input type="checkbox" id="abobora" name="abobora" class="item_filter size" value="abobora">
+				<a>
+					<label for="abobora">
+						<img src="imagens/hortalicas/abobora.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="abobrinha" name="abobrinha" class="item_filter size" value="abobrinha">
+				<a>
+					<label for="abobrinha">
+						<img src="imagens/hortalicas/abobrinha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="acelga" name="acelga" class="item_filter size" value="acelga">
+				<a>
+					<label for="acelga">
+						<img src="imagens/hortalicas/acelga.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="agriao" name="agriao" class="item_filter size" value="agriao">
+				<a>
+					<label for="agriao">
+						<img src="imagens/hortalicas/agriao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="aipo" name="aipo" class="item_filter size" value="aipo">
+				<a>
+					<label for="aipo">
+						<img src="imagens/hortalicas/aipo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="alface" name="alface" class="item_filter size" value="alface">
+				<a>
+					<label for="alface">
+						<img src="imagens/hortalicas/alface.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="alho" name="alho" class="item_filter size" value="alho">
+				<a>
+					<label for="alho">
+						<img src="imagens/hortalicas/alho.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="almeirao" name="almeirao" class="item_filter size" value="almeirao">
+				<a>
+					<label for="almeirao">
+						<img src="imagens/hortalicas/almeirao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="batata" name="batata" class="item_filter size" value="batata">
+				<a>
+					<label for="batata">
+						<img src="imagens/hortalicas/batata_inglesa.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="batata_doce" name="batata_doce" class="item_filter size" value="batata_doce">
+				<a>
+					<label for="batata_doce">
+						<img src="imagens/hortalicas/batata_doce.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="berinjela" name="berinjela" class="item_filter size" value="berinjela">
+				<a>
+					<label for="berinjela">
+						<img src="imagens/hortalicas/berinjela.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="beterraba" name="beterraba" class="item_filter size" value="beterraba">
+				<a>
+					<label for="beterraba">
+						<img src="imagens/hortalicas/beterraba.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="brocolis" name="brocolis" class="item_filter size" value="brocolis">
+				<a>
+					<label for="brocolis">
+						<img src="imagens/hortalicas/brocolis.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cara" name="cara" class="item_filter size" value="cara">
+				<a>
+					<label for="cara">
+						<img src="imagens/hortalicas/cara.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="caruru" name="caruru" class="item_filter size" value="caruru">
+				<a>
+					<label for="caruru">
+						<img src="imagens/hortalicas/caruru.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="catalonha" name="catalonha" class="item_filter size" value="catalonha">
+				<a>
+					<label for="catalonha">
+						<img src="imagens/hortalicas/catalonha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cebola" name="cebola" class="item_filter size" value="cebola">
+				<a>
+					<label for="cebola">
+						<img src="imagens/hortalicas/cebola.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cebolinha" name="cebolinha" class="item_filter size" value="cebolinha">
+				<a>
+					<label for="cebolinha">
+						<img src="imagens/hortalicas/cebolinha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cenoura" name="cenoura" class="item_filter size" value="cenoura">
+				<a>
+					<label for="cenoura">
+						<img src="imagens/hortalicas/cenoura.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="chicoria" name="chicoria" class="item_filter size" value="chicoria">
+				<a>
+					<label for="chicoria">
+						<img src="imagens/hortalicas/chicoria.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="chuchu" name="chuchu" class="item_filter size" value="chuchu">
+				<a>
+					<label for="chuchu">
+						<img src="imagens/hortalicas/chuchu.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="coentro" name="coentro" class="item_filter size" value="coentro">
+				<a>
+					<label for="coentro">
+						<img src="imagens/hortalicas/coentro.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="couve" name="couve" class="item_filter size" value="couve">
+				<a>
+					<label for="couve">
+						<img src="imagens/hortalicas/couve.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="couve_flor" name="couve_flor" class="item_filter size" value="couve_flor">
+				<a>
+					<label for="couve_flor">
+						<img src="imagens/hortalicas/couve_flor.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="espinafre" name="espinafre" class="item_filter size" value="espinafre">
+				<a>
+					<label for="espinafre">
+						<img src="imagens/hortalicas/espinafre.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="fava" name="fava" class="item_filter size" value="fava">
+				<a>
+					<label for="fava">
+						<img src="imagens/hortalicas/fava.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="inhame" name="inhame" class="item_filter size" value="inhame">
+				<a>
+					<label for="inhame">
+						<img src="imagens/hortalicas/inhame.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="jilo" name="jilo" class="item_filter size" value="jilo">
+				<a>
+					<label for="jilo">
+						<img src="imagens/hortalicas/jilo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="jurubeba" name="jurubeba" class="item_filter size" value="jurubeba">
+				<a>
+					<label for="jurubeba">
+						<img src="imagens/hortalicas/jurubeba.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="mandioca" name="mandioca" class="item_filter size" value="mandioca">
+				<a>
+					<label for="mandioca">
+						<img src="imagens/hortalicas/mandioca.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="manjericao" name="manjericao" class="item_filter size" value="manjericao">
+				<a>
+					<label for="manjericao">
+						<img src="imagens/hortalicas/manjericao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="maxixe" name="maxixe" class="item_filter size" value="maxixe">
+				<a>
+					<label for="maxixe">
+						<img src="imagens/hortalicas/maxixe.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="mostarda" name="mostarda" class="item_filter size" value="mostarda">
+				<a>
+					<label for="mostarda">
+						<img src="imagens/hortalicas/mostarda.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="nabo" name="nabo" class="item_filter size" value="nabo">
+				<a>
+					<label for="nabo">
+						<img src="imagens/hortalicas/nabo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="palmito" name="palmito" class="item_filter size" value="palmito">
+				<a>
+					<label for="palmito">
+						<img src="imagens/hortalicas/palmito.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pepino" name="pepino" class="item_filter size" value="pepino">
+				<a>
+					<label for="pepino">
+						<img src="imagens/hortalicas/pepino.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pimentao" name="pimentao" class="item_filter size" value="pimentao">
+				<a>
+					<label for="pimentao">
+						<img src="imagens/hortalicas/pimentao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="quiabo" name="quiabo" class="item_filter size" value="quiabo">
+				<a>
+					<label for="quiabo">
+						<img src="imagens/hortalicas/quiabo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="rabanete" name="rabanete" class="item_filter size" value="rabanete">
+				<a>
+					<label for="rabanete">
+						<img src="imagens/hortalicas/rabanete.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="repolho" name="repolho" class="item_filter size" value="repolho">
+				<a>
+					<label for="repolho">
+						<img src="imagens/hortalicas/repolho.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="tomate" name="tomate" class="item_filter size" value="tomate">
+				<a>
+					<label for="tomate">
+						<img src="imagens/hortalicas/tomate.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="vagem" name="vagem" class="item_filter size" value="vagem">
+				<a>
+					<label for="vagem">
+						<img src="imagens/hortalicas/vagem.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Laticínios</h4>
+			<li>
+				<input type="checkbox" id="iorgute" name="iorgute" class="item_filter size" value="iorgute">
+				<a>
+					<label for="iorgute">
+						<img src="imagens/laticinios/iorgute.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="leite" name="leite" class="item_filter size" value="leite">
+				<a>
+					<label for="leite">
+						<img src="imagens/laticinios/leite.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="manteiga" name="manteiga" class="item_filter size" value="manteiga">
+				<a>
+					<label for="manteiga">
+						<img src="imagens/laticinios/manteiga.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="margarina" name="margarina" class="item_filter size" value="margarina">
+				<a>
+					<label for="margarina">
+						<img src="imagens/laticinios/margarina.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="queijo" name="queijo" class="item_filter size" value="queijo">
+				<a>
+					<label for="queijo">
+						<img src="imagens/laticinios/queijo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="requeijao" name="requeijao" class="item_filter size" value="requeijao">
+				<a>
+					<label for="requeijao">
+						<img src="imagens/laticinios/requeijao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Leguminosas e derivados</h4>
+			<li>
+				<input type="checkbox" id="amendoim" name="amendoim" class="item_filter size" value="amendoim">
+				<a>
+					<label for="amendoim">
+						<img src="imagens/leguminosas/amendoim.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="ervilha" name="ervilha" class="item_filter size" value="ervilha">
+				<a>
+					<label for="ervilha">
+						<img src="imagens/leguminosas/ervilha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="feijao" name="feijao" class="item_filter size" value="feijao">
+				<a>
+					<label for="feijao">
+						<img src="imagens/leguminosas/feijao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="lentilha" name="lentilha" class="item_filter size" value="lentilha">
+				<a>
+					<label for="lentilha">
+						<img src="imagens/leguminosas/lentilha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="soja" name="soja" class="item_filter size" value="soja">
+				<a>
+					<label for="soja">
+						<img src="imagens/leguminosas/soja.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Massas: </h4>
+			<li>
+				<input type="checkbox" id="acaraje" name="acaraje" class="item_filter size" value="acaraje">
+				<a>
+					<label for="acaraje">
+						<img src="imagens/massas/acaraje.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="bolo" name="bolo" class="item_filter size" value="bolo">
+				<a>
+					<label for="bolo">
+						<img src="imagens/massas/bolo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cream_cracker" name="cream_cracker" class="item_filter size" value="cream_cracker">
+				<a>
+					<label for="cream_cracker">
+						<img src="imagens/massas/cream_cracker.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="coxinha" name="coxinha" class="item_filter size" value="coxinha">
+				<a>
+					<label for="coxinha">
+						<img src="imagens/massas/coxinha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="crepioca" name="crepioca" class="item_filter size" value="crepioca">
+				<a>
+					<label for="crepioca">
+						<img src="imagens/massas/crepioca.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="enroladinho" name="enroladinho" class="item_filter size" value="enroladinho">
+				<a>
+					<label for="enroladinho">
+						<img src="imagens/massas/enroladinho.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="esfirra" name="esfirra" class="item_filter size" value="esfirra">
+				<a>
+					<label for="esfirra">
+						<img src="imagens/massas/esfirra.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="feijoada" name="feijoada" class="item_filter size" value="feijoada">
+				<a>
+					<label for="feijoada">
+						<img src="imagens/massas/feijoada.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="hamburguer" name="hamburguer" class="item_filter size" value="hamburguer">
+				<a>
+					<label for="hamburguer">
+						<img src="imagens/massas/hamburguer.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="lasanha" name="lasanha" class="item_filter size" value="lasanha">
+				<a>
+					<label for="lasanha">
+						<img src="imagens/massas/lasanha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="macarrao" name="macarrao" class="item_filter size" value="macarrao">
+				<a>
+					<label for="macarrao">
+						<img src="imagens/massas/macarrao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="panetone" name="panetone" class="item_filter size" value="panetone">
+				<a>
+					<label for="panetone">
+						<img src="imagens/massas/panetone.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="panqueca" name="panqueca" class="item_filter size" value="panqueca">
+				<a>
+					<label for="panqueca">
+						<img src="imagens/massas/panqueca.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pao" name="pao" class="item_filter size" value="pao">
+				<a>
+					<label for="pao">
+						<img src="imagens/massas/pao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pao_doce" name="pao_doce" class="item_filter size" value="pao_doce">
+				<a>
+					<label for="pao_doce">
+						<img src="imagens/massas/pao_doce.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pao_queijo" name="pao_queijo" class="item_filter size" value="pao_queijo">
+				<a>
+					<label for="pao_queijo">
+						<img src="imagens/massas/pao_queijo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pastel" name="pastel" class="item_filter size" value="pastel">
+				<a>
+					<label for="pastel">
+						<img src="imagens/massas/pastel.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pizza" name="pizza" class="item_filter size" value="pizza">
+				<a>
+					<label for="pizza">
+						<img src="imagens/massas/pizza.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="risole" name="risole" class="item_filter size" value="risole">
+				<a>
+					<label for="risole">
+						<img src="imagens/massas/risole.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="salpicao" name="salpicao" class="item_filter size" value="salpicao">
+				<a>
+					<label for="salpicao">
+						<img src="imagens/massas/salpicao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="tapioca" name="tapioca" class="item_filter size" value="tapioca">
+				<a>
+					<label for="tapioca">
+						<img src="imagens/massas/tapioca.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="torrada" name="torrada" class="item_filter size" value="torrada">
+				<a>
+					<label for="torrada">
+						<img src="imagens/massas/torrada.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="vatapa" name="vatapa" class="item_filter size" value="vatapa">
+				<a>
+					<label for="vatapa">
+						<img src="imagens/massas/vatapa.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Óleos</h4>
+			<li>
+				<input type="checkbox" id="azeite" name="azeite" class="item_filter size" value="azeite">
+				<a>
+					<label for="azeite">
+						<img src="imagens/oleos/azeite.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="oleo" name="oleo" class="item_filter size" value="oleo">
+				<a>
+					<label for="oleo">
+						<img src="imagens/oleos/oleo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Pescados e Frutos do Mar</h4>
+			<li>
+				<input type="checkbox" id="atum" name="atum" class="item_filter size" value="atum">
+				<a>
+					<label for="atum">
+						<img src="imagens/pescados/atum.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="bacalhau" name="bacalhau" class="item_filter size" value="bacalhau">
+				<a>
+					<label for="bacalhau">
+						<img src="imagens/pescados/bacalhau.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="badejo" name="badejo" class="item_filter size" value="badejo">
+				<a>
+					<label for="badejo">
+						<img src="imagens/pescados/badejo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="camarao" name="camarao" class="item_filter size" value="camarao">
+				<a>
+					<label for="camarao">
+						<img src="imagens/pescados/camarao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="caranguejo" name="caranguejo" class="item_filter size" value="caranguejo">
+				<a>
+					<label for="caranguejo">
+						<img src="imagens/pescados/caranguejo.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="lagosta" name="lagosta" class="item_filter size" value="lagosta">
+				<a>
+					<label for="lagosta">
+						<img src="imagens/pescados/lagosta.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="manjuba" name="manjuba" class="item_filter size" value="manjuba">
+				<a>
+					<label for="manjuba">
+						<img src="imagens/pescados/manjuba.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="ostra" name="ostra" class="item_filter size" value="ostra">
+				<a>
+					<label for="ostra">
+						<img src="imagens/pescados/ostra.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="peixe" name="peixe" class="item_filter size" value="peixe">
+				<a>
+					<label for="peixe">
+						<img src="imagens/pescados/peixe.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="sardinha" name="sardinha" class="item_filter size" value="sardinha">
+				<a>
+					<label for="sardinha">
+						<img src="imagens/pescados/sardinha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<h4>Nozes e Sementes</h4>
+			<li>
+				<input type="checkbox" id="amendoa" name="amendoa" class="item_filter size" value="amendoa">
+				<a>
+					<label for="amendoa">
+						<img src="imagens/sementes/amendoa.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="avela" name="avela" class="item_filter size" value="avela">
+				<a>
+					<label for="avela">
+						<img src="imagens/sementes/avela.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="cacao" name="cacao" class="item_filter size" value="cacao">
+				<a>
+					<label for="cacao">
+						<img src="imagens/sementes/cacao.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="castanha" name="castanha" class="item_filter size" value="castanha">
+				<a>
+					<label for="castanha">
+						<img src="imagens/sementes/castanha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="coco" name="coco" class="item_filter size" value="coco">
+				<a>
+					<label for="coco">
+						<img src="imagens/sementes/coco.jpg" width="100" alt="" />	
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="gergilim" name="gergilim" class="item_filter size" value="gergilim">
+				<a>
+					<label for="gergilim">
+						<img src="imagens/sementes/gergilim.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="linhaca" name="linhaca" class="item_filter size" value="linhaca">
+				<a>
+					<label for="linhaca">
+						<img src="imagens/sementes/castanha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="noz" name="noz" class="item_filter size" value="noz">
+				<a>
+					<label for="noz">
+						<img src="imagens/sementes/noz.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+			<li>
+				<input type="checkbox" id="pupunha" name="pupunha" class="item_filter size" value="pupunha">
+				<a>
+					<label for="pupunha">
+						<img src="imagens/sementes/pupunha.jpg" width="100" alt="" />
+					</label>
+				</a>
+			</li>
+		</ul>
+		<!-- Botão -->
+    		<button type="submit">Verificar</button><input type='reset' value='Limpar'/>
+    	</form>
+    		<footer>
+    			<h4>Toda Classificação foi baseada na Tabela Brasileira de Composição de Alimentos – TACO. 4º edição revisada e ampliada</h4>
+    			<h4>Além de toda pesquisa da composição dos alimentos do Departamento de Informática em Saúde - Escola Paulista de Medicina - Universidade Federal de São Paulo </h4>
+    		</footer>
+	</td>
+
+	</table>
+	 
+</div>
+</body>
+
+</html>
